@@ -1,12 +1,35 @@
 # 🛍️ Web Produto
 
-Frontend desenvolvido com Angular para consulta de produtos, consumindo uma API REST criada com Java e Spring Boot.
-
-O projeto tem como objetivo praticar integração entre frontend e backend, utilizando Angular, TypeScript, Forms e HttpClient para realizar requisições HTTP.
+![Angular](https://img.shields.io/badge/Angular-21-red?style=for-the-badge\&logo=angular)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge\&logo=typescript)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
+![REST API](https://img.shields.io/badge/REST%20API-Integration-blue?style=for-the-badge)
+![Build](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)
+![License](https://img.shields.io/badge/license-MIT-lightgrey?style=for-the-badge)
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+# 📌 Sobre o projeto
+
+O **Web Produto** é uma aplicação frontend desenvolvida com **Angular** para consulta de produtos, integrada a uma API REST desenvolvida com **Java** e **Spring Boot**.
+
+O projeto foi criado com foco na prática de consumo de APIs REST, comunicação entre frontend e backend, utilização do **HttpClient** e construção de interfaces utilizando Angular.
+
+---
+
+# 🚀 Funcionalidades
+
+* Pesquisa de produtos por nome
+* Consumo de API REST utilizando HttpClient
+* Consulta dinâmica de produtos
+* Integração com backend Spring Boot
+* Interface responsiva
+* Exibição dos resultados retornados pela API
+
+---
+
+# 🧱 Tecnologias Utilizadas
 
 * Angular
 * TypeScript
@@ -14,56 +37,16 @@ O projeto tem como objetivo praticar integração entre frontend e backend, util
 * CSS3
 * FormsModule
 * HttpClient
-* API REST
+* REST API
 
 ---
 
-## ✨ Funcionalidades
+# 🏗️ Estrutura do Projeto
 
-* Campo de busca por nome do produto
-* Consulta de produtos em API REST
-* Integração com backend Spring Boot
-* Requisição HTTP GET com HttpClient
-* Interface responsiva com CSS
-* Exibição inicial dos resultados no console do navegador
-
----
-
-## 🏗️ Arquitetura
-
-```text id="7kjab1"
-Web Produto (Angular)
-        │
-        ▼
-Produtos API (Spring Boot)
-        │
-        ▼
-PostgreSQL
-```
-
----
-
-## 🔗 Integração com Backend
-
-Este frontend consome o endpoint de listagem da Produtos API:
-
-```text id="in4gr8"
-GET http://localhost:8081/api/v1/produtos/listar?nome={nomeProduto}
-```
-
-Projeto relacionado:
-
-```text id="ejf5gh"
-https://github.com/beatrizlima-tech/produtos-api
-```
-
----
-
-## 📂 Estrutura do Projeto
-
-```text id="mcx53l"
+```text
 src/
-├── app/
+
+├── app
 │   ├── app.html
 │   ├── app.css
 │   ├── app.ts
@@ -73,54 +56,117 @@ src/
 
 ---
 
-## ▶️ Como Executar
+# 📊 Arquitetura
 
-### Pré-requisitos
+```text
+Usuário
+      │
+      ▼
+Web Produto (Angular)
+      │
+      ▼
+HttpClient
+      │
+      ▼
+Produtos API (Spring Boot)
+      │
+      ▼
+PostgreSQL
+```
 
-* Node.js
-* Angular CLI
+---
 
-### Clonar o projeto
+# 🔗 Integração com Backend
 
-```bash id="kik1r9"
+Este frontend consome o endpoint:
+
+```http
+GET /api/v1/produtos/listar?nome={nome}
+```
+
+Projeto relacionado:
+
+**Produtos API**
+
+https://github.com/beatrizlima-tech/produtos-api
+
+---
+
+# ⚙️ Como Executar
+
+## 1. Clonar o repositório
+
+```bash
 git clone https://github.com/beatrizlima-tech/web-produto.git
 ```
 
-### Instalar dependências
+---
 
-```bash id="vut6i5"
+## 2. Instalar dependências
+
+```bash
 npm install
 ```
 
-### Executar
+---
 
-```bash id="ewmb2r"
+## 3. Executar a aplicação
+
+```bash
 ng serve
 ```
 
-A aplicação ficará disponível em:
+---
 
-```text id="xx36vj"
+## 4. Acessar
+
+```text
 http://localhost:4200
 ```
 
-Para a consulta funcionar, a API backend deve estar em execução:
+Para que a aplicação funcione corretamente, a API backend deve estar em execução:
 
-```text id="y7umxa"
+```text
 http://localhost:8081
 ```
 
 ---
 
-## 📚 Objetivo
+# 📚 Conceitos Aplicados
 
-Este projeto foi desenvolvido para praticar a criação de interfaces com Angular e o consumo de APIs REST, reforçando conceitos de integração entre frontend e backend.
+* Componentização
+* Angular Standalone Components
+* Two-Way Data Binding
+* FormsModule
+* HttpClient
+* Consumo de APIs REST
+* Integração Frontend e Backend
+* Programação Assíncrona
+* Organização de componentes
 
 ---
 
-## 👩‍💻 Autora
+# 📌 Melhorias Futuras
+
+* Exibir os produtos em tabela
+* Implementar paginação
+* Adicionar filtros avançados
+* Criar tela de detalhes do produto
+* Exibir mensagens de carregamento
+* Melhorar tratamento de erros
+* Criar testes automatizados
+* Publicar a aplicação
+
+---
+
+# 👩‍💻 Autora
 
 **Beatriz Lima de Oliveira**
 
-GitHub:
+🔗 GitHub
+
 https://github.com/beatrizlima-tech
+
+💼 LinkedIn
+
+https://www.linkedin.com/in/beatrizlima-tech
